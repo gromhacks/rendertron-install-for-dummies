@@ -62,7 +62,7 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
 
     `npm run start`
 
-8. Test Rendertron - 143.110.146.105
+8. Test Rendertron
 
 
     `curl http://<rendertron-server-ip>:3000/render/`
