@@ -1,6 +1,6 @@
 # Rendertron Install for Dummies
 
-This is just a simple repository of how to setup and install "Rendertron (by Google)"
+This is just a simple repository of how to setup and install "Rendertron" (by Google).
 
 ## What is Rendertron
 
