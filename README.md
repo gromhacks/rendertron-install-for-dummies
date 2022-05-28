@@ -14,10 +14,13 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
 
 ## Quick Setup
 
-`git clone https://github.com/gromhacks/rendertron-install-for-dummies.git`
-`cd rendertron-install-for-dummies`
-`chmod +x install.sh`
-`./install.sh`
+  `git clone https://github.com/gromhacks/rendertron-install-for-dummies.git`
+
+  `cd rendertron-install-for-dummies`
+
+  `chmod +x install.sh`
+
+  `./install.sh`
 
 
 ## How to Create a Rendertron Server in Digital Ocean or with a VPS Provider
@@ -28,40 +31,40 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
 
 2. SSH into the instance and run apt update and upgrade
 
-`apt update -y && apt upgrade -y`
+  `apt update -y && apt upgrade -y`
 
 3. Make tools directory
 
-`mkdir tools`
+  `mkdir tools`
 
 4. Install Google Chrome for x64 linux.
 
-`wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
+  `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
 
-`apt install ./google-chrome-stable_current_amd64.deb -y`
+  `apt install ./google-chrome-stable_current_amd64.deb -y`
 
 5. Install NPM
 
-`apt install npm -y`
+  `apt install npm -y`
 
 6. Install Rendertron
 
-`git clone https://github.com/GoogleChrome/rendertron.git`
+  `git clone https://github.com/GoogleChrome/rendertron.git`
 
-`cd rendertron`
-`npm install`
-`npm run build`
+  `cd rendertron`
+  `npm install`
+  `npm run build`
 
 7. Run Rendertron
 
-`npm run start`
+  `npm run start`
 
 8. Test Rendertron - 143.110.146.105
 
 
-`curl http://<rendertron-server-ip>:3000/render/`
+  `curl http://<rendertron-server-ip>:3000/render/`
 
 
 9. Shutdown Rendertron
 
-`poweroff`
+  `poweroff`
