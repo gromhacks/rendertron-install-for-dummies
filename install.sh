@@ -76,4 +76,4 @@ printf "\n"
 printf "${bgreen}[+] Installation Complete\n\n${reset}"
 printf "${bblue}[+] To start Rendertron run - npm run start\n\n${reset}"
 printf "${bblue}[+] To test Rendertron use - curl http://<rendertron-server-ip>:3000/render/<Target URL>${reset}"
-
+printf "\n"
