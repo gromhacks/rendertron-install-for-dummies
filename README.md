@@ -18,9 +18,10 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
 
 ## Quick Setup
 
-`git clone <this repo>`
-`cd to repo`
-`chmod +x `
+`git clone https://github.com/gromhacks/rendertron-install-for-dummies.git`
+`cd rendertron-install-for-dummies`
+`chmod +x install.sh`
+`./install.sh`
 
 
 ## How to Create a Rendertron Server in Digital Ocean or with a VPS Provider
