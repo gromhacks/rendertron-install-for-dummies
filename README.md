@@ -55,7 +55,9 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
     `git clone https://github.com/GoogleChrome/rendertron.git`
 
     `cd rendertron`
+    
     `npm install`
+    
     `npm run build`
 
 7. Run Rendertron
