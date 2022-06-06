@@ -73,3 +73,31 @@ What this really means for Bug Bounty Hunters and Pentesters is a way to inline 
 9. Shutdown Rendertron
 
     `poweroff`
+    
+10. (Optional) If you want rendertron to start and stop automatically as a systemctl service do the following.
+
+
+    `nano /etc/systemd/system/rendertron.service`
+    
+    ```
+    [Unit]
+    Description=Rendertron Server Daemon
+    After=network.target
+
+    [Service]
+    Type=simple
+    User=root
+    UMask=777
+    ExecStart=npm run start --prefix /root/tools/rendertron
+    Restart=on-failure
+
+    # Configures the time to wait before service is stopped forcefully.
+    TimeoutStopSec=300
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+    
+    `systemctl enable rendertron`
+    
+    `systemctl start rendertron`
